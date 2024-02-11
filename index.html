@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio website</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/3cdb8a0a34.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ...............Header section............... -->
+
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/SRF. (1).png" class="logo" />
+          <ul id="sidemenu">
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">about</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+
+        <div class="header-text">
+          <!-- <p>UI / UX Developer</p> -->
+          <span id="element"></span>
+          <h1>Hi, I'm <span>Sourav</span><br />from India</h1>
+        </div>
+      </div>
+    </div>
+
+    <!-- .................about section................ -->
+
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/user.png" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About me</h1>
+            <p>
+              Stepping into the exciting world of full-stack development, I'm a
+              recent graduate fueled by a passion for crafting seamless web
+              experiences. Driven by an insatiable curiosity and a knack for
+              problem-solving, I find joy in translating complex ideas into
+              user-friendly interfaces and robust backend structures. While my
+              journey is just beginning, I'm energized by a constant hunger for
+              knowledge and a dedication to pushing the boundaries of my
+              capabilities. Dive into my portfolio and witness the potential
+              unfolding, project by project.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+            </div>
+
+            <div class="tab-contents tab-skills" id="skills">
+              <ul>
+                <li><span>UI / UX</span><br />Designing Web/App interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li>
+                  <span>Software Development</span><br />Building Computer
+                  programs
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span>2023 June - current</span><br />Web Development</li>
+                <li>
+                  <span>2023 July - sept</span><br />Intern at Persistent
+                  Systems
+                </li>
+                <li>
+                  <span>2021 - current</span><br />Building Computer programs
+                </li>
+              </ul>
+            </div>
+
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span>2020 - current</span><br />B.Tech from Institute Of
+                  Technical Education & Research, Bhubaneswar
+                </li>
+                <li>
+                  <span>2017 - 2019</span><br />12th from Sonepur Higher
+                  Secondary School, Sonepur
+                </li>
+                <li>
+                  <span>2014 - 2017</span><br />10th from Sahara Trust high
+                  School, Subarnapur
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ....................service section...................... -->
+
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code fa-bounce"></i>
+            <h2>web design</h2>
+            <p>
+              I craft high-performance web experiences using
+              React.Js, javascript, css. My passion lies in building modern,
+              scalable solutions that deliver results. Explore my portfolio to
+              see my work in action!
+            </p>
+            <a href="https://www.simplilearn.com/what-is-web-designing-article"
+              >Learn more</a
+            >
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop fa-beat"></i>
+            <h2>UI/UX design</h2>
+            <p>
+              I craft user-centric experiences that are both visually stunning
+              and functionally intuitive. I bridge the gap between design and
+              development, delivering solutions that drive engagement and
+              achieve business goals.
+            </p>
+            <a href="https://flatironschool.com/blog/what-is-ux-ui-design/"
+              >Learn more</a
+            >
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store fa-bounce"></i>
+            <h2>Software development</h2>
+            <p>
+              Crafting innovative solutions with 3 years of experience in web
+              development, mobile app development, etc. Possesses a strong
+              understanding of Java, javascript, React.Js and thrives on
+              tackling complex challenges. Passionate about building
+              user-centric applications that deliver impactful results.
+            </p>
+            <a
+              href="https://www.indeed.com/career-advice/career-development/what-is-software-development"
+              >Learn more</a
+            >
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ................my portfolio section................ -->
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+
+        <div class="work-list">
+          <div class="work">
+            <img src="images/work-1.png" />
+            <div class="layer">
+              <h3>SR Fashion</h3>
+              <p>
+                This app lets you to buy latest fashion trends and be
+                fashionable over others
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-2.png" />
+            <div class="layer">
+              <h3>Active UMS</h3>
+              <p>
+                Developed a University Management System utilizing, enabling
+                efficient addition, viewing, and updating of student and faculty
+                information within a centralized database.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+
+          <div class="work">
+            <img src="images/work-3.png" />
+            <div class="layer">
+              <h3>Email Hunter</h3>
+              <p>
+                Developed an chrome extension which gives you all emails listed
+                in your current opening website or page
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <a href="#" class="btn"><span>See more</span></a>
+      </div>
+    </div>
+
+    <!-- ..................contact details................... -->
+
+    <div id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact me</h1>
+            <p>
+              <i class="fa-solid fa-paper-plane"></i> pandasourav140@gmail.com
+            </p>
+            <p><i class="fa-solid fa-square-phone"></i> +91 8249594802</p>
+            <div class="social-icons">
+              <a href="https://www.instagram.com/souravkpanda1/"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+              <a href="https://www.facebook.com/profile.php?id=100006955741162"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a href="https://github.com/Sourav-140"
+                ><i class="fa-brands fa-github"></i
+              ></a>
+              <a href="https://www.linkedin.com/in/sourav-panda-920467217/"
+                ><i class="fa-brands fa-linkedin"></i
+              ></a>
+            </div>
+            <a href="images/Sourav_Panda.pdf" download class="button"
+              >Download Resume ⬇</a
+            >
+          </div>
+
+          <div class="contact-right">
+            <form name="submit-to-google-sheet">
+              <input type="text" name="Name" placeholder="Your name" />
+              <input type="email" name="email" placeholder="Your Email" />
+              <textarea
+                name="Message"
+                rows="6"
+                placeholder="Message"
+              ></textarea>
+              <button type="submit" class="btn2">Submit</button>
+            </form>
+            <span id="msg"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ..............footer section............ -->
+
+    <div class="footer">
+      <p>Copyright © 2023 SRV Technologies Pvt Ltd. All Rights Reserved.</p>
+    </div>
+
+    <!-- Setup and start animation! -->
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: ["Web Developer", "Software Developer", "UI/UX Designer"],
+        typeSpeed: 43,
+      });
+    </script>
+    <script src="main.js"></script>
+  </body>
+</html>
